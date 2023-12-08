@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "6bb6a5a6-3fc0-49c5-90b3-0231cedb655a",
+		"name": "My grades",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29257400"
+	},
+	"item": [
+		{
+			"name": "200",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFydGVtLm9nYW5lc3lhbkBnbWFpbC5jb20iLCJpYXQiOjE3MDE5ODY2ODYsImV4cCI6MTcwMjA3MzA4Nn0.9oCQg5uwrrgjwJm3kfSCFrd83srfiAy77MCcGiQPGzQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": 37477,\n        \"quiz\": {\n            \"id\": 14002,\n            \"name\": \"Vlasov-1\",\n            \"createdAt\": \"2023-11-16T23:35:59.000Z\",\n            \"questions\": [\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"score\": 5,\n                    \"answer\": 0,\n                    \"options\": [\n                        \"Yes\",\n                        \"Not\"\n                    ],\n                    \"question\": \"Why not?\",\n                    \"hasOtherOption\": null\n                }\n            ],\n            \"updatedAt\": \"2023-11-16T23:35:59.000Z\",\n            \"totalScore\": 5,\n            \"passingPercentage\": 75,\n            \"showStopperQuestion\": null\n        },\n        \"assignmentGroupID\": \"fbdd9c4e-67c0-4f54-ab94-918e35993616\",\n        \"status\": \"GRADED\",\n        \"result\": \"PASSED\",\n        \"gradedBy\": \"AUTOMATIC\",\n        \"answers\": [\n            {\n                \"answer\": 0,\n                \"textAnswer\": \"\"\n            }\n        ],\n        \"scores\": [\n            5\n        ],\n        \"additionalScores\": [],\n        \"comments\": [],\n        \"summary\": \"\",\n        \"submittedAt\": \"2023-11-16T23:44:06.000Z\",\n        \"gradedAt\": null,\n        \"createdAt\": \"2023-11-16T23:42:30.000Z\",\n        \"updatedAt\": \"2023-11-16T23:44:06.000Z\",\n        \"userId\": 27983\n    },\n    {\n        \"id\": 37479,\n        \"status\": \"SUBMITTED\",\n        \"createdAt\": \"2023-11-16T23:45:03.000Z\",\n        \"submittedAt\": \"2023-11-19T18:38:12.000Z\",\n        \"quiz\": {\n            \"name\": \"Vlasov-2\",\n            \"questions\": [\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"question\": \"You or I ?\",\n                    \"options\": [\n                        \"You\",\n                        \"I\"\n                    ],\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"TEXTUAL\",\n                    \"question\": \"QA or SQA?\",\n                    \"options\": [],\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"MULTIPLE_CHOICE\",\n                    \"question\": \"Which answer?\",\n                    \"options\": [\n                        \"First\",\n                        \"Second\",\n                        \"Third\"\n                    ],\n                    \"hasOtherOption\": false\n                }\n            ],\n            \"showStopperQuestion\": null\n        },\n        \"result\": \"PENDING\"\n    },\n    {\n        \"id\": 37622,\n        \"quiz\": {\n            \"id\": 13369,\n            \"name\": \" Quiz07/09\",\n            \"createdAt\": \"2023-09-06T22:08:29.000Z\",\n            \"questions\": [\n                {\n                    \"type\": \"TEXTUAL\",\n                    \"score\": 5,\n                    \"question\": \"What is your name?\"\n                },\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"score\": 7,\n                    \"answer\": 2,\n                    \"options\": [\n                        \"San Francisco\",\n                        \"Sacramento\",\n                        \"Los Angeles\",\n                        \"Redding\"\n                    ],\n                    \"question\": \"Which city is city largest in California?\",\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"MULTIPLE_CHOICE\",\n                    \"score\": 6,\n                    \"answers\": [\n                        0,\n                        1,\n                        2\n                    ],\n                    \"options\": [\n                        \"Steve Jobs\",\n                        \"Steve Wozniak\",\n                        \"Ronald Wayne\",\n                        \"Ronald Reagan\"\n                    ],\n                    \"question\": \"Who was apple founded by?\",\n                    \"hasOtherOption\": true\n                }\n            ],\n            \"updatedAt\": \"2023-09-15T18:23:28.000Z\",\n            \"totalScore\": 18,\n            \"passingPercentage\": 75,\n            \"showStopperQuestion\": 1\n        },\n        \"assignmentGroupID\": \"61e89768-0645-4d59-ac09-5f1ee7d1605e\",\n        \"status\": \"GRADED\",\n        \"result\": \"FAILED\",\n        \"gradedBy\": \"AUTOMATIC\",\n        \"answers\": [\n            {\n                \"answer\": null,\n                \"textAnswer\": \"No\"\n            },\n            {\n                \"answer\": 1,\n                \"textAnswer\": \"\"\n            },\n            {\n                \"answer\": [\n                    0,\n                    1\n                ],\n                \"textAnswer\": \"\"\n            }\n        ],\n        \"scores\": [\n            0,\n            0,\n            4\n        ],\n        \"additionalScores\": [],\n        \"comments\": [],\n        \"summary\": \"\",\n        \"submittedAt\": \"2023-12-05T19:27:14.000Z\",\n        \"gradedAt\": null,\n        \"createdAt\": \"2023-11-22T00:51:02.000Z\",\n        \"updatedAt\": \"2023-12-05T19:27:14.000Z\",\n        \"userId\": 27983\n    },\n    {\n        \"id\": 38717,\n        \"status\": \"SUBMITTED\",\n        \"createdAt\": \"2023-12-02T05:04:13.000Z\",\n        \"submittedAt\": \"2023-12-05T20:30:17.000Z\",\n        \"quiz\": {\n            \"name\": \"Test Maryna Palii 4\",\n            \"questions\": [\n                {\n                    \"type\": \"TEXTUAL\",\n                    \"question\": \"Test\",\n                    \"options\": [],\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"question\": \"Test 2\",\n                    \"options\": [\n                        \"yes\",\n                        \"no\",\n                        \"both\"\n                    ],\n                    \"hasOtherOption\": false\n                }\n            ],\n            \"showStopperQuestion\": 0\n        },\n        \"result\": \"PENDING\"\n    },\n    {\n        \"id\": 39293,\n        \"quiz\": {\n            \"id\": 13778,\n            \"name\": \"The capitals\",\n            \"createdAt\": \"2023-09-11T19:54:57.000Z\",\n            \"questions\": [\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"score\": 5,\n                    \"answer\": 1,\n                    \"options\": [\n                        \"Lyon\",\n                        \"Paris\"\n                    ],\n                    \"question\": \"The capital of France is?\",\n                    \"hasOtherOption\": null\n                },\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"score\": 5,\n                    \"answer\": 0,\n                    \"options\": [\n                        \"Roma\",\n                        \"Milano\"\n                    ],\n                    \"question\": \"The capital of Italy is?\",\n                    \"hasOtherOption\": null\n                }\n            ],\n            \"updatedAt\": \"2023-09-11T19:54:57.000Z\",\n            \"totalScore\": 10,\n            \"passingPercentage\": 75,\n            \"showStopperQuestion\": null\n        },\n        \"assignmentGroupID\": \"a2eb53af-05e9-4836-8e5b-b6ead0ee4a7d\",\n        \"status\": \"GRADED\",\n        \"result\": \"PASSED\",\n        \"gradedBy\": \"AUTOMATIC\",\n        \"answers\": [\n            {\n                \"answer\": 1,\n                \"textAnswer\": \"\"\n            },\n            {\n                \"answer\": 0,\n                \"textAnswer\": \"\"\n            }\n        ],\n        \"scores\": [\n            5,\n            5\n        ],\n        \"additionalScores\": [],\n        \"comments\": [],\n        \"summary\": \"\",\n        \"submittedAt\": \"2023-12-05T18:47:31.000Z\",\n        \"gradedAt\": null,\n        \"createdAt\": \"2023-12-05T18:33:35.000Z\",\n        \"updatedAt\": \"2023-12-05T18:47:31.000Z\",\n        \"userId\": 27983\n    },\n    {\n        \"id\": 39798,\n        \"status\": \"SUBMITTED\",\n        \"createdAt\": \"2023-12-05T20:36:09.000Z\",\n        \"submittedAt\": \"2023-12-05T20:38:05.000Z\",\n        \"quiz\": {\n            \"name\": \" ABC\",\n            \"questions\": [\n                {\n                    \"type\": \"TEXTUAL\",\n                    \"question\": \"What is your name?\",\n                    \"options\": [],\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"question\": \"Which city is city largest in California?\",\n                    \"options\": [\n                        \"San Francisco\",\n                        \"Sacramento\",\n                        \"Los Angeles\",\n                        \"Redding\"\n                    ],\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"MULTIPLE_CHOICE\",\n                    \"question\": \"Who was apple founded by?\",\n                    \"options\": [\n                        \"Steve Jobs\",\n                        \"Steve Wozniak\",\n                        \"Ronald Wayne\",\n                        \"Ronald Reagan\"\n                    ],\n                    \"hasOtherOption\": true\n                }\n            ],\n            \"showStopperQuestion\": 1\n        },\n        \"result\": \"PENDING\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mygrades}}/my-grades",
+					"host": [
+						"{{mygrades}}"
+					],
+					"path": [
+						"my-grades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "401",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 401\", function () {",
+							"    pm.response.to.have.status(401);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": 37477,\n        \"quiz\": {\n            \"id\": 14002,\n            \"name\": \"Vlasov-1\",\n            \"createdAt\": \"2023-11-16T23:35:59.000Z\",\n            \"questions\": [\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"score\": 5,\n                    \"answer\": 0,\n                    \"options\": [\n                        \"Yes\",\n                        \"Not\"\n                    ],\n                    \"question\": \"Why not?\",\n                    \"hasOtherOption\": null\n                }\n            ],\n            \"updatedAt\": \"2023-11-16T23:35:59.000Z\",\n            \"totalScore\": 5,\n            \"passingPercentage\": 75,\n            \"showStopperQuestion\": null\n        },\n        \"assignmentGroupID\": \"fbdd9c4e-67c0-4f54-ab94-918e35993616\",\n        \"status\": \"GRADED\",\n        \"result\": \"PASSED\",\n        \"gradedBy\": \"AUTOMATIC\",\n        \"answers\": [\n            {\n                \"answer\": 0,\n                \"textAnswer\": \"\"\n            }\n        ],\n        \"scores\": [\n            5\n        ],\n        \"additionalScores\": [],\n        \"comments\": [],\n        \"summary\": \"\",\n        \"submittedAt\": \"2023-11-16T23:44:06.000Z\",\n        \"gradedAt\": null,\n        \"createdAt\": \"2023-11-16T23:42:30.000Z\",\n        \"updatedAt\": \"2023-11-16T23:44:06.000Z\",\n        \"userId\": 27983\n    },\n    {\n        \"id\": 37479,\n        \"status\": \"SUBMITTED\",\n        \"createdAt\": \"2023-11-16T23:45:03.000Z\",\n        \"submittedAt\": \"2023-11-19T18:38:12.000Z\",\n        \"quiz\": {\n            \"name\": \"Vlasov-2\",\n            \"questions\": [\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"question\": \"You or I ?\",\n                    \"options\": [\n                        \"You\",\n                        \"I\"\n                    ],\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"TEXTUAL\",\n                    \"question\": \"QA or SQA?\",\n                    \"options\": [],\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"MULTIPLE_CHOICE\",\n                    \"question\": \"Which answer?\",\n                    \"options\": [\n                        \"First\",\n                        \"Second\",\n                        \"Third\"\n                    ],\n                    \"hasOtherOption\": false\n                }\n            ],\n            \"showStopperQuestion\": null\n        },\n        \"result\": \"PENDING\"\n    },\n    {\n        \"id\": 37622,\n        \"quiz\": {\n            \"id\": 13369,\n            \"name\": \" Quiz07/09\",\n            \"createdAt\": \"2023-09-06T22:08:29.000Z\",\n            \"questions\": [\n                {\n                    \"type\": \"TEXTUAL\",\n                    \"score\": 5,\n                    \"question\": \"What is your name?\"\n                },\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"score\": 7,\n                    \"answer\": 2,\n                    \"options\": [\n                        \"San Francisco\",\n                        \"Sacramento\",\n                        \"Los Angeles\",\n                        \"Redding\"\n                    ],\n                    \"question\": \"Which city is city largest in California?\",\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"MULTIPLE_CHOICE\",\n                    \"score\": 6,\n                    \"answers\": [\n                        0,\n                        1,\n                        2\n                    ],\n                    \"options\": [\n                        \"Steve Jobs\",\n                        \"Steve Wozniak\",\n                        \"Ronald Wayne\",\n                        \"Ronald Reagan\"\n                    ],\n                    \"question\": \"Who was apple founded by?\",\n                    \"hasOtherOption\": true\n                }\n            ],\n            \"updatedAt\": \"2023-09-15T18:23:28.000Z\",\n            \"totalScore\": 18,\n            \"passingPercentage\": 75,\n            \"showStopperQuestion\": 1\n        },\n        \"assignmentGroupID\": \"61e89768-0645-4d59-ac09-5f1ee7d1605e\",\n        \"status\": \"GRADED\",\n        \"result\": \"FAILED\",\n        \"gradedBy\": \"AUTOMATIC\",\n        \"answers\": [\n            {\n                \"answer\": null,\n                \"textAnswer\": \"No\"\n            },\n            {\n                \"answer\": 1,\n                \"textAnswer\": \"\"\n            },\n            {\n                \"answer\": [\n                    0,\n                    1\n                ],\n                \"textAnswer\": \"\"\n            }\n        ],\n        \"scores\": [\n            0,\n            0,\n            4\n        ],\n        \"additionalScores\": [],\n        \"comments\": [],\n        \"summary\": \"\",\n        \"submittedAt\": \"2023-12-05T19:27:14.000Z\",\n        \"gradedAt\": null,\n        \"createdAt\": \"2023-11-22T00:51:02.000Z\",\n        \"updatedAt\": \"2023-12-05T19:27:14.000Z\",\n        \"userId\": 27983\n    },\n    {\n        \"id\": 38717,\n        \"status\": \"SUBMITTED\",\n        \"createdAt\": \"2023-12-02T05:04:13.000Z\",\n        \"submittedAt\": \"2023-12-05T20:30:17.000Z\",\n        \"quiz\": {\n            \"name\": \"Test Maryna Palii 4\",\n            \"questions\": [\n                {\n                    \"type\": \"TEXTUAL\",\n                    \"question\": \"Test\",\n                    \"options\": [],\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"question\": \"Test 2\",\n                    \"options\": [\n                        \"yes\",\n                        \"no\",\n                        \"both\"\n                    ],\n                    \"hasOtherOption\": false\n                }\n            ],\n            \"showStopperQuestion\": 0\n        },\n        \"result\": \"PENDING\"\n    },\n    {\n        \"id\": 39293,\n        \"quiz\": {\n            \"id\": 13778,\n            \"name\": \"The capitals\",\n            \"createdAt\": \"2023-09-11T19:54:57.000Z\",\n            \"questions\": [\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"score\": 5,\n                    \"answer\": 1,\n                    \"options\": [\n                        \"Lyon\",\n                        \"Paris\"\n                    ],\n                    \"question\": \"The capital of France is?\",\n                    \"hasOtherOption\": null\n                },\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"score\": 5,\n                    \"answer\": 0,\n                    \"options\": [\n                        \"Roma\",\n                        \"Milano\"\n                    ],\n                    \"question\": \"The capital of Italy is?\",\n                    \"hasOtherOption\": null\n                }\n            ],\n            \"updatedAt\": \"2023-09-11T19:54:57.000Z\",\n            \"totalScore\": 10,\n            \"passingPercentage\": 75,\n            \"showStopperQuestion\": null\n        },\n        \"assignmentGroupID\": \"a2eb53af-05e9-4836-8e5b-b6ead0ee4a7d\",\n        \"status\": \"GRADED\",\n        \"result\": \"PASSED\",\n        \"gradedBy\": \"AUTOMATIC\",\n        \"answers\": [\n            {\n                \"answer\": 1,\n                \"textAnswer\": \"\"\n            },\n            {\n                \"answer\": 0,\n                \"textAnswer\": \"\"\n            }\n        ],\n        \"scores\": [\n            5,\n            5\n        ],\n        \"additionalScores\": [],\n        \"comments\": [],\n        \"summary\": \"\",\n        \"submittedAt\": \"2023-12-05T18:47:31.000Z\",\n        \"gradedAt\": null,\n        \"createdAt\": \"2023-12-05T18:33:35.000Z\",\n        \"updatedAt\": \"2023-12-05T18:47:31.000Z\",\n        \"userId\": 27983\n    },\n    {\n        \"id\": 39798,\n        \"status\": \"SUBMITTED\",\n        \"createdAt\": \"2023-12-05T20:36:09.000Z\",\n        \"submittedAt\": \"2023-12-05T20:38:05.000Z\",\n        \"quiz\": {\n            \"name\": \" ABC\",\n            \"questions\": [\n                {\n                    \"type\": \"TEXTUAL\",\n                    \"question\": \"What is your name?\",\n                    \"options\": [],\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"question\": \"Which city is city largest in California?\",\n                    \"options\": [\n                        \"San Francisco\",\n                        \"Sacramento\",\n                        \"Los Angeles\",\n                        \"Redding\"\n                    ],\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"MULTIPLE_CHOICE\",\n                    \"question\": \"Who was apple founded by?\",\n                    \"options\": [\n                        \"Steve Jobs\",\n                        \"Steve Wozniak\",\n                        \"Ronald Wayne\",\n                        \"Ronald Reagan\"\n                    ],\n                    \"hasOtherOption\": true\n                }\n            ],\n            \"showStopperQuestion\": 1\n        },\n        \"result\": \"PENDING\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mygrades}}/my-grades",
+					"host": [
+						"{{mygrades}}"
+					],
+					"path": [
+						"my-grades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "403",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFydGVtLm9nYW5lc3lhbkBnbWFpbC5jb20iLCJpYXQiOjE3MDE5ODY2ODYsImV4cCI6MTcwMjA3MzA4Nn0.9oCQg5uwrrgjwJm3kfSCFrd83srfiAy77MCcGiQPGzQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": 37477,\n        \"quiz\": {\n            \"id\": 14002,\n            \"name\": \"Vlasov-1\",\n            \"createdAt\": \"2023-11-16T23:35:59.000Z\",\n            \"questions\": [\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"score\": 5,\n                    \"answer\": 0,\n                    \"options\": [\n                        \"Yes\",\n                        \"Not\"\n                    ],\n                    \"question\": \"Why not?\",\n                    \"hasOtherOption\": null\n                }\n            ],\n            \"updatedAt\": \"2023-11-16T23:35:59.000Z\",\n            \"totalScore\": 5,\n            \"passingPercentage\": 75,\n            \"showStopperQuestion\": null\n        },\n        \"assignmentGroupID\": \"fbdd9c4e-67c0-4f54-ab94-918e35993616\",\n        \"status\": \"GRADED\",\n        \"result\": \"PASSED\",\n        \"gradedBy\": \"AUTOMATIC\",\n        \"answers\": [\n            {\n                \"answer\": 0,\n                \"textAnswer\": \"\"\n            }\n        ],\n        \"scores\": [\n            5\n        ],\n        \"additionalScores\": [],\n        \"comments\": [],\n        \"summary\": \"\",\n        \"submittedAt\": \"2023-11-16T23:44:06.000Z\",\n        \"gradedAt\": null,\n        \"createdAt\": \"2023-11-16T23:42:30.000Z\",\n        \"updatedAt\": \"2023-11-16T23:44:06.000Z\",\n        \"userId\": 27983\n    },\n    {\n        \"id\": 37479,\n        \"status\": \"SUBMITTED\",\n        \"createdAt\": \"2023-11-16T23:45:03.000Z\",\n        \"submittedAt\": \"2023-11-19T18:38:12.000Z\",\n        \"quiz\": {\n            \"name\": \"Vlasov-2\",\n            \"questions\": [\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"question\": \"You or I ?\",\n                    \"options\": [\n                        \"You\",\n                        \"I\"\n                    ],\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"TEXTUAL\",\n                    \"question\": \"QA or SQA?\",\n                    \"options\": [],\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"MULTIPLE_CHOICE\",\n                    \"question\": \"Which answer?\",\n                    \"options\": [\n                        \"First\",\n                        \"Second\",\n                        \"Third\"\n                    ],\n                    \"hasOtherOption\": false\n                }\n            ],\n            \"showStopperQuestion\": null\n        },\n        \"result\": \"PENDING\"\n    },\n    {\n        \"id\": 37622,\n        \"quiz\": {\n            \"id\": 13369,\n            \"name\": \" Quiz07/09\",\n            \"createdAt\": \"2023-09-06T22:08:29.000Z\",\n            \"questions\": [\n                {\n                    \"type\": \"TEXTUAL\",\n                    \"score\": 5,\n                    \"question\": \"What is your name?\"\n                },\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"score\": 7,\n                    \"answer\": 2,\n                    \"options\": [\n                        \"San Francisco\",\n                        \"Sacramento\",\n                        \"Los Angeles\",\n                        \"Redding\"\n                    ],\n                    \"question\": \"Which city is city largest in California?\",\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"MULTIPLE_CHOICE\",\n                    \"score\": 6,\n                    \"answers\": [\n                        0,\n                        1,\n                        2\n                    ],\n                    \"options\": [\n                        \"Steve Jobs\",\n                        \"Steve Wozniak\",\n                        \"Ronald Wayne\",\n                        \"Ronald Reagan\"\n                    ],\n                    \"question\": \"Who was apple founded by?\",\n                    \"hasOtherOption\": true\n                }\n            ],\n            \"updatedAt\": \"2023-09-15T18:23:28.000Z\",\n            \"totalScore\": 18,\n            \"passingPercentage\": 75,\n            \"showStopperQuestion\": 1\n        },\n        \"assignmentGroupID\": \"61e89768-0645-4d59-ac09-5f1ee7d1605e\",\n        \"status\": \"GRADED\",\n        \"result\": \"FAILED\",\n        \"gradedBy\": \"AUTOMATIC\",\n        \"answers\": [\n            {\n                \"answer\": null,\n                \"textAnswer\": \"No\"\n            },\n            {\n                \"answer\": 1,\n                \"textAnswer\": \"\"\n            },\n            {\n                \"answer\": [\n                    0,\n                    1\n                ],\n                \"textAnswer\": \"\"\n            }\n        ],\n        \"scores\": [\n            0,\n            0,\n            4\n        ],\n        \"additionalScores\": [],\n        \"comments\": [],\n        \"summary\": \"\",\n        \"submittedAt\": \"2023-12-05T19:27:14.000Z\",\n        \"gradedAt\": null,\n        \"createdAt\": \"2023-11-22T00:51:02.000Z\",\n        \"updatedAt\": \"2023-12-05T19:27:14.000Z\",\n        \"userId\": 27983\n    },\n    {\n        \"id\": 38717,\n        \"status\": \"SUBMITTED\",\n        \"createdAt\": \"2023-12-02T05:04:13.000Z\",\n        \"submittedAt\": \"2023-12-05T20:30:17.000Z\",\n        \"quiz\": {\n            \"name\": \"Test Maryna Palii 4\",\n            \"questions\": [\n                {\n                    \"type\": \"TEXTUAL\",\n                    \"question\": \"Test\",\n                    \"options\": [],\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"question\": \"Test 2\",\n                    \"options\": [\n                        \"yes\",\n                        \"no\",\n                        \"both\"\n                    ],\n                    \"hasOtherOption\": false\n                }\n            ],\n            \"showStopperQuestion\": 0\n        },\n        \"result\": \"PENDING\"\n    },\n    {\n        \"id\": 39293,\n        \"quiz\": {\n            \"id\": 13778,\n            \"name\": \"The capitals\",\n            \"createdAt\": \"2023-09-11T19:54:57.000Z\",\n            \"questions\": [\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"score\": 5,\n                    \"answer\": 1,\n                    \"options\": [\n                        \"Lyon\",\n                        \"Paris\"\n                    ],\n                    \"question\": \"The capital of France is?\",\n                    \"hasOtherOption\": null\n                },\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"score\": 5,\n                    \"answer\": 0,\n                    \"options\": [\n                        \"Roma\",\n                        \"Milano\"\n                    ],\n                    \"question\": \"The capital of Italy is?\",\n                    \"hasOtherOption\": null\n                }\n            ],\n            \"updatedAt\": \"2023-09-11T19:54:57.000Z\",\n            \"totalScore\": 10,\n            \"passingPercentage\": 75,\n            \"showStopperQuestion\": null\n        },\n        \"assignmentGroupID\": \"a2eb53af-05e9-4836-8e5b-b6ead0ee4a7d\",\n        \"status\": \"GRADED\",\n        \"result\": \"PASSED\",\n        \"gradedBy\": \"AUTOMATIC\",\n        \"answers\": [\n            {\n                \"answer\": 1,\n                \"textAnswer\": \"\"\n            },\n            {\n                \"answer\": 0,\n                \"textAnswer\": \"\"\n            }\n        ],\n        \"scores\": [\n            5,\n            5\n        ],\n        \"additionalScores\": [],\n        \"comments\": [],\n        \"summary\": \"\",\n        \"submittedAt\": \"2023-12-05T18:47:31.000Z\",\n        \"gradedAt\": null,\n        \"createdAt\": \"2023-12-05T18:33:35.000Z\",\n        \"updatedAt\": \"2023-12-05T18:47:31.000Z\",\n        \"userId\": 27983\n    },\n    {\n        \"id\": 39798,\n        \"status\": \"SUBMITTED\",\n        \"createdAt\": \"2023-12-05T20:36:09.000Z\",\n        \"submittedAt\": \"2023-12-05T20:38:05.000Z\",\n        \"quiz\": {\n            \"name\": \" ABC\",\n            \"questions\": [\n                {\n                    \"type\": \"TEXTUAL\",\n                    \"question\": \"What is your name?\",\n                    \"options\": [],\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"SINGLE_CHOICE\",\n                    \"question\": \"Which city is city largest in California?\",\n                    \"options\": [\n                        \"San Francisco\",\n                        \"Sacramento\",\n                        \"Los Angeles\",\n                        \"Redding\"\n                    ],\n                    \"hasOtherOption\": false\n                },\n                {\n                    \"type\": \"MULTIPLE_CHOICE\",\n                    \"question\": \"Who was apple founded by?\",\n                    \"options\": [\n                        \"Steve Jobs\",\n                        \"Steve Wozniak\",\n                        \"Ronald Wayne\",\n                        \"Ronald Reagan\"\n                    ],\n                    \"hasOtherOption\": true\n                }\n            ],\n            \"showStopperQuestion\": 1\n        },\n        \"result\": \"PENDING\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mygrades}}/quizzes",
+					"host": [
+						"{{mygrades}}"
+					],
+					"path": [
+						"quizzes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
