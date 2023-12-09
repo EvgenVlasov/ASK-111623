@@ -1,0 +1,4 @@
+quizName,totalScore,passingPercentage
+Test quiz 1,18,75
+Quiz with long name,20,100
+Quiz name with special characters #!,10,50
